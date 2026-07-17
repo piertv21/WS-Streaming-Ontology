@@ -516,10 +516,11 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasProducer">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/producer"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#produced"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to its producer. Subproperty of hasContributor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its producer. Subproperty of hasContributor and schema:producer.</rdfs:comment>
         <rdfs:label xml:lang="en">has producer</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1167,6 +1168,12 @@
     <!-- https://schema.org/productionCompany -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/productionCompany"/>
+    
+
+
+    <!-- https://schema.org/producer -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/producer"/>
     
 
 
