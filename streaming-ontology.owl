@@ -1260,7 +1260,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#PercentageValue"/>
-        <rdfs:comment xml:lang="en">Functional, exactly one. The percentage of the content item watched (0–100 inclusive, at most 2 fractional digits). Design threshold: &gt;= 70.00 = significant viewing; &gt;= 90.00 = completed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Functional, exactly one. The percentage of the content item watched (0–100 inclusive, at most 2 fractional digits). Threshold: &gt;= 70.00 = significant viewing; &gt;= 90.00 = completed.</rdfs:comment>
         <rdfs:label xml:lang="en">completion percentage</rdfs:label>
     </owl:DatatypeProperty>
     
