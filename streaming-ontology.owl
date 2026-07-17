@@ -15,7 +15,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/streaming-ontology">
-        <rdfs:comment xml:lang="en">An ontology for audiovisual content, streaming platforms, viewing behavior, user preferences, ratings and content recommendation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology for audiovisual content, streaming platforms, viewing behavior, user preferences, content rating and recommendation.</rdfs:comment>
         <rdfs:label xml:lang="en">Streaming Platforms Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -1165,15 +1165,15 @@
     
 
 
-    <!-- https://schema.org/productionCompany -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/productionCompany"/>
-    
-
-
     <!-- https://schema.org/producer -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/producer"/>
+    
+
+
+    <!-- https://schema.org/productionCompany -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/productionCompany"/>
     
 
 
