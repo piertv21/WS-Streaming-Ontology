@@ -1663,6 +1663,12 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
+        </owl:disjointUnionOf>
         <rdfs:comment xml:lang="en">Any audiovisual work available or potentially available through streaming. Root class of the content hierarchy.</rdfs:comment>
         <rdfs:label xml:lang="en">Audiovisual Content</rdfs:label>
     </owl:Class>
@@ -1967,7 +1973,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#Screenwriter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#Screenwriter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <rdfs:comment xml:lang="en">A person who writes the screenplay for audiovisual content.</rdfs:comment>
         <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
@@ -2088,7 +2093,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#User -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#User">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <rdfs:comment xml:lang="en">A registered user of one or more streaming platforms.</rdfs:comment>
         <rdfs:label xml:lang="en">User</rdfs:label>
