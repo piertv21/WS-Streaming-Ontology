@@ -1982,7 +1982,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#StreamingPlatform -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#StreamingPlatform">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <rdfs:comment xml:lang="en">A service offering streamed audiovisual content to subscribers. Platform brands (Netflix, Prime Video, Apple TV+) will be represented as individuals of this class using DBpedia resources.</rdfs:comment>
         <rdfs:label xml:lang="en">Streaming Platform</rdfs:label>
