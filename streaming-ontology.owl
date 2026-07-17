@@ -1764,7 +1764,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#Director -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#Director">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <rdfs:comment xml:lang="en">A person who directs audiovisual content.</rdfs:comment>
         <rdfs:label xml:lang="en">Director</rdfs:label>
@@ -1909,7 +1908,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#Producer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#Producer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <rdfs:comment xml:lang="en">A person responsible for producing audiovisual content.</rdfs:comment>
         <rdfs:label xml:lang="en">Producer</rdfs:label>
@@ -1931,7 +1929,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#ProductionCountry -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ProductionCountry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Country"/>
         <rdfs:comment xml:lang="en">A country associated with the production of audiovisual content, and also used as a geographic reference for content availability regions.</rdfs:comment>
         <rdfs:label xml:lang="en">Production Country</rdfs:label>
@@ -2136,7 +2133,6 @@
     <!-- http://www.semanticweb.org/streaming-ontology#UserRating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#UserRating">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:subClassOf rdf:resource="https://schema.org/Review"/>
         <rdfs:subClassOf>
             <owl:Restriction>
