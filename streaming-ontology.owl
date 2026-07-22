@@ -176,7 +176,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#availableInCountry">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCountry"/>
+        <rdfs:range rdf:resource="https://schema.org/Country"/>
         <rdfs:comment xml:lang="en">Relates a content availability record to the geographic country where the content is available.</rdfs:comment>
         <rdfs:label xml:lang="en">available in country</rdfs:label>
     </owl:ObjectProperty>
@@ -376,7 +376,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasAvailableLanguage">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isAvailableLanguageOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentLanguage"/>
+        <rdfs:range rdf:resource="https://schema.org/Language"/>
         <rdfs:comment xml:lang="en">Relates audiovisual content to languages available for playback (audio, subtitles, etc.).</rdfs:comment>
         <rdfs:label xml:lang="en">has available language</rdfs:label>
     </owl:ObjectProperty>
@@ -433,10 +433,11 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasGenre -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasGenre">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/genre"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isGenreOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to its genre. Aligned with schema:genre.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its genre. Subproperty of schema:genre.</rdfs:comment>
         <rdfs:label xml:lang="en">has genre</rdfs:label>
     </owl:ObjectProperty>
     
@@ -448,7 +449,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isOriginalLanguageOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentLanguage"/>
+        <rdfs:range rdf:resource="https://schema.org/Language"/>
         <rdfs:comment xml:lang="en">Functional. Relates audiovisual content to its original language. Functionally specialized alignment of schema:inLanguage.</rdfs:comment>
         <rdfs:label xml:lang="en">has original language</rdfs:label>
     </owl:ObjectProperty>
@@ -545,7 +546,7 @@
         <rdfs:subPropertyOf rdf:resource="https://schema.org/countryOfOrigin"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isProductionCountryOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCountry"/>
+        <rdfs:range rdf:resource="https://schema.org/Country"/>
         <rdfs:comment xml:lang="en">Relates audiovisual content to its country of production. Subproperty of schema:countryOfOrigin.</rdfs:comment>
         <rdfs:label xml:lang="en">has production country</rdfs:label>
     </owl:ObjectProperty>
@@ -555,11 +556,10 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasReceivedRating -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasReceivedRating">
-        <rdfs:subPropertyOf rdf:resource="https://schema.org/review"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#ratesContent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <rdfs:comment xml:lang="en">Inverse of ratesContent. Relates audiovisual content to user rating records it has received. Subproperty of schema:review.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of ratesContent. Relates audiovisual content to user rating records it has received.</rdfs:comment>
         <rdfs:label xml:lang="en">has received rating</rdfs:label>
     </owl:ObjectProperty>
     
@@ -725,7 +725,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#isAvailableLanguageOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isAvailableLanguageOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentLanguage"/>
+        <rdfs:domain rdf:resource="https://schema.org/Language"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:comment xml:lang="en">Inverse of hasAvailableLanguage. Relates a language to content for which it is available for playback.</rdfs:comment>
         <rdfs:label xml:lang="en">is available language of</rdfs:label>
@@ -773,7 +773,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#isOriginalLanguageOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isOriginalLanguageOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentLanguage"/>
+        <rdfs:domain rdf:resource="https://schema.org/Language"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:comment xml:lang="en">Inverse of hasOriginalLanguage. Relates a language to content for which it is the original language.</rdfs:comment>
         <rdfs:label xml:lang="en">is original language of</rdfs:label>
@@ -784,9 +784,9 @@
     <!-- http://www.semanticweb.org/streaming-ontology#isProductionCountryOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isProductionCountryOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCountry"/>
+        <rdfs:domain rdf:resource="https://schema.org/Country"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Inverse of hasProductionCountry. Relates a production country to the content produced there.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of hasProductionCountry. Relates a country to the content produced there.</rdfs:comment>
         <rdfs:label xml:lang="en">is production country of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1165,6 +1165,12 @@
     
 
 
+    <!-- https://schema.org/genre -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/genre"/>
+    
+
+
     <!-- https://schema.org/producer -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/producer"/>
@@ -1174,12 +1180,6 @@
     <!-- https://schema.org/productionCompany -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/productionCompany"/>
-    
-
-
-    <!-- https://schema.org/review -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/review"/>
     
 
 
@@ -1607,17 +1607,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#ActiveAvailability -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ActiveAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/streaming-ontology#ExpiredAvailability"/>
-        <rdfs:comment xml:lang="en">A content availability record that is currently active (the current date is between the start and end dates, or there is no end date).</rdfs:comment>
-        <rdfs:label xml:lang="en">Active Availability</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#Actor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#Actor">
@@ -1669,7 +1658,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#AudiovisualContent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#AudiovisualContent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/streaming-ontology#title"/>
@@ -1704,7 +1693,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#CompletedViewingEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/streaming-ontology#PartialViewingEvent"/>
-        <rdfs:comment xml:lang="en">A viewing event where completionPercentage is at or above 90. Inferred by SWRL rule R5.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A viewing event where completionPercentage is at or above 90. Do not assert membership directly.</rdfs:comment>
         <rdfs:label xml:lang="en">Completed Viewing Event</rdfs:label>
     </owl:Class>
     
@@ -1752,19 +1741,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ContentCompleter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">A user inferred to have completed at least one content item fully. Inferred by SWRL rule R8.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A user who has completed at least one content item fully. Do not assert membership directly.</rdfs:comment>
         <rdfs:label xml:lang="en">Content Completer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#ContentLanguage -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ContentLanguage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Language"/>
-        <rdfs:comment xml:lang="en">A language used by or available for audiovisual content (original language, audio dubbing, subtitles).</rdfs:comment>
-        <rdfs:label xml:lang="en">Content Language</rdfs:label>
     </owl:Class>
     
 
@@ -1826,16 +1804,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#ExpiredAvailability -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ExpiredAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <rdfs:comment xml:lang="en">A content availability record whose end date has passed; the content is no longer available on that platform.</rdfs:comment>
-        <rdfs:label xml:lang="en">Expired Availability</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#Genre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#Genre">
@@ -1888,7 +1856,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#HighlyEngagedUser">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">A user inferred to be highly engaged because they have at least one completed viewing event (completionPercentage &gt;= 90). Inferred by SWRL rule R7.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A user who is highly engaged because they have at least one completed viewing event (completionPercentage &gt;= 90). Do not assert membership directly.</rdfs:comment>
         <rdfs:label xml:lang="en">Highly Engaged User</rdfs:label>
     </owl:Class>
     
@@ -1930,7 +1898,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#PartialViewingEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
-        <rdfs:comment xml:lang="en">A viewing event where completionPercentage is below 90. Inferred by SWRL rule R6.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A viewing event where completionPercentage is below 90. Do not assert membership directly.</rdfs:comment>
         <rdfs:label xml:lang="en">Partial Viewing Event</rdfs:label>
     </owl:Class>
     
@@ -1952,16 +1920,6 @@
         <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <rdfs:comment xml:lang="en">An organization that produces audiovisual content.</rdfs:comment>
         <rdfs:label xml:lang="en">Production Company</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#ProductionCountry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ProductionCountry">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Country"/>
-        <rdfs:comment xml:lang="en">A country associated with the production of audiovisual content, and also used as a geographic reference for content availability regions.</rdfs:comment>
-        <rdfs:label xml:lang="en">Production Country</rdfs:label>
     </owl:Class>
     
 
@@ -2175,7 +2133,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#UserRating -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#UserRating">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Review"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Rating"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/streaming-ontology#ratesContent"/>
@@ -2215,7 +2173,7 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ratesContent"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ratingByUser"/>
         </owl:hasKey>
-        <rdfs:comment xml:lang="en">A rating event submitted by a user for a specific audiovisual content item. Uniquely identified by (ratingByUser, ratesContent). Subclass of schema:Review.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A rating event submitted by a user for a specific audiovisual content item. Uniquely identified by (ratingByUser, ratesContent). Subclass of schema:Rating.</rdfs:comment>
         <rdfs:label xml:lang="en">User Rating</rdfs:label>
     </owl:Class>
     
@@ -2335,8 +2293,18 @@
 
     <owl:Class rdf:about="https://schema.org/Country">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:comment xml:lang="en">External Schema.org class. Aligned with ProductionCountry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External Schema.org class. Used for production countries and content availability regions.</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/CreativeWork -->
+
+    <owl:Class rdf:about="https://schema.org/CreativeWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
+        <rdfs:comment xml:lang="en">External Schema.org class. Root type for creative works. Parent of AudiovisualContent.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creative Work</rdfs:label>
     </owl:Class>
     
 
@@ -2345,7 +2313,7 @@
 
     <owl:Class rdf:about="https://schema.org/Language">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:comment xml:lang="en">External Schema.org class. Aligned with ContentLanguage.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External Schema.org class. Used for original and available content languages.</rdfs:comment>
         <rdfs:label xml:lang="en">Language</rdfs:label>
     </owl:Class>
     
@@ -2381,12 +2349,12 @@
     
 
 
-    <!-- https://schema.org/Review -->
+    <!-- https://schema.org/Rating -->
 
-    <owl:Class rdf:about="https://schema.org/Review">
+    <owl:Class rdf:about="https://schema.org/Rating">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:comment xml:lang="en">External Schema.org class. Parent of or alignment for UserRating.</rdfs:comment>
-        <rdfs:label xml:lang="en">Review</rdfs:label>
+        <rdfs:comment xml:lang="en">External Schema.org class. Parent of UserRating for numeric rating alignment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rating</rdfs:label>
     </owl:Class>
     
 
@@ -2436,10 +2404,8 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Character"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ContentLanguage"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Genre"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ProductionCountry"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Recommendation"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#UserPreference"/>
@@ -2447,6 +2413,8 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
+            <rdf:Description rdf:about="https://schema.org/Country"/>
+            <rdf:Description rdf:about="https://schema.org/Language"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
