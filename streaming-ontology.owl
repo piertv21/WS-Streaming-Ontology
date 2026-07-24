@@ -64,9 +64,6 @@
                     <rdf:Description>
                         <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.00</xsd:maxInclusive>
                     </rdf:Description>
-                    <rdf:Description>
-                        <xsd:fractionDigits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:fractionDigits>
-                    </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </owl:equivalentClass>
@@ -89,9 +86,6 @@
                     <rdf:Description>
                         <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.00</xsd:maxInclusive>
                     </rdf:Description>
-                    <rdf:Description>
-                        <xsd:fractionDigits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:fractionDigits>
-                    </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </owl:equivalentClass>
@@ -113,9 +107,6 @@
                     </rdf:Description>
                     <rdf:Description>
                         <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</xsd:maxInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:fractionDigits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:fractionDigits>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
