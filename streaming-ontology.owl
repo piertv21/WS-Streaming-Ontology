@@ -15,8 +15,8 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/streaming-ontology">
-        <rdfs:comment xml:lang="en">An ontology for audiovisual content, streaming platforms, viewing behavior, user preferences, content rating and recommendation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Streaming Platforms Ontology</rdfs:label>
+        <rdfs:comment xml:lang="en">An ontology designed to model the streaming domain, capturing audiovisual content, streaming platform availability, user viewing behavior and preferences, content ratings, and simple recommendation logic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Streaming Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -262,6 +262,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#episodeOf">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasEpisode"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <rdfs:comment xml:lang="en">Inverse of hasEpisode. Relates an episode to the TV season it belongs to.</rdfs:comment>
         <rdfs:label xml:lang="en">episode of</rdfs:label>
     </owl:ObjectProperty>
@@ -402,6 +403,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasEpisode">
         <rdfs:subPropertyOf rdf:resource="https://schema.org/episode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <rdfs:comment xml:lang="en">Relates a TV season to its episodes. Subproperty of schema:episode. Inverse of episodeOf.</rdfs:comment>
         <rdfs:label xml:lang="en">has episode</rdfs:label>
