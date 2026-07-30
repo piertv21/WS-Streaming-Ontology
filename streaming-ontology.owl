@@ -165,18 +165,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#contributedTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#contributedTo">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
-        <rdfs:domain rdf:resource="https://schema.org/Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Inverse of hasContributor. Relates a person to audiovisual content they contributed to.</rdfs:comment>
-        <rdfs:label xml:lang="en">contributed to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#directed -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#directed">
@@ -202,27 +190,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#episodeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#episodeOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasEpisode"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
-        <rdfs:comment xml:lang="en">Inverse of hasEpisode. Relates an episode to the TV season it belongs to.</rdfs:comment>
-        <rdfs:label xml:lang="en">episode of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#episodeOfSeason -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#episodeOfSeason">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#episodeOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasSeasonEpisode"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
-        <rdfs:comment xml:lang="en">Functional. Relates an episode to the season it belongs to. Subproperty of episodeOf. Inverse of hasSeasonEpisode.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Functional. Relates an episode to the season it belongs to. Inverse of hasSeasonEpisode.</rdfs:comment>
         <rdfs:label xml:lang="en">episode of season</rdfs:label>
     </owl:ObjectProperty>
     
@@ -243,11 +218,10 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasActor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasActor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
         <rdfs:subPropertyOf rdf:resource="https://schema.org/actor"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to an actor who performed in it. Subproperty of hasContributor and schema:actor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to an actor who performed in it. Subproperty of schema:actor.</rdfs:comment>
         <rdfs:label xml:lang="en">has actor</rdfs:label>
     </owl:ObjectProperty>
     
@@ -260,22 +234,6 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
         <rdfs:comment xml:lang="en">Relates audiovisual content to a reified availability record on a platform.</rdfs:comment>
         <rdfs:label xml:lang="en">has availability</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#hasAvailableContent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasAvailableContent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isAvailableOn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#offersAvailability"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#availabilityOfContent"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Inferred summary property. Relates a streaming platform to the audiovisual content available on it. Inferred via chain: offersAvailability o availabilityOfContent.</rdfs:comment>
-        <rdfs:label xml:lang="en">has available content</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -304,38 +262,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#hasContributor -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasContributor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="https://schema.org/Person"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to a person who contributed to its creation in any role.</rdfs:comment>
-        <rdfs:label xml:lang="en">has contributor</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#hasDirector -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasDirector">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
         <rdfs:subPropertyOf rdf:resource="https://schema.org/director"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to its director. Subproperty of hasContributor and schema:director.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its director. Subproperty of schema:director.</rdfs:comment>
         <rdfs:label xml:lang="en">has director</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#hasEpisode -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasEpisode">
-        <rdfs:subPropertyOf rdf:resource="https://schema.org/episode"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
-        <rdfs:comment xml:lang="en">Relates a TV season to its episodes. Subproperty of schema:episode. Inverse of episodeOf.</rdfs:comment>
-        <rdfs:label xml:lang="en">has episode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -413,12 +347,11 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasProducer -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasProducer">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
         <rdfs:subPropertyOf rdf:resource="https://schema.org/producer"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#produced"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to its producer. Subproperty of hasContributor and schema:producer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its producer. Subproperty of schema:producer.</rdfs:comment>
         <rdfs:label xml:lang="en">has producer</rdfs:label>
     </owl:ObjectProperty>
     
@@ -465,12 +398,11 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasScreenwriter -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasScreenwriter">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasContributor"/>
         <rdfs:subPropertyOf rdf:resource="https://schema.org/creator"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#wroteScreenplayFor"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
-        <rdfs:comment xml:lang="en">Relates audiovisual content to its screenwriter. Subproperty of hasContributor and schema:creator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its screenwriter. Subproperty of schema:creator.</rdfs:comment>
         <rdfs:label xml:lang="en">has screenwriter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -492,10 +424,10 @@
     <!-- http://www.semanticweb.org/streaming-ontology#hasSeasonEpisode -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasSeasonEpisode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/streaming-ontology#hasEpisode"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/episode"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
-        <rdfs:comment xml:lang="en">Relates a TV season to its episodes. Subproperty of hasEpisode. Inverse of episodeOfSeason.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a TV season to its episodes. Subproperty of schema:episode. Inverse of episodeOfSeason.</rdfs:comment>
         <rdfs:label xml:lang="en">has season episode</rdfs:label>
     </owl:ObjectProperty>
     
@@ -525,22 +457,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#hasWatchLaterContent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasWatchLaterContent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#isInWatchLaterList"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#hasWatchLaterEntry"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#watchLaterContent"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Inferred summary property. Relates a watch-later list to the audiovisual content items in it. Inferred via chain: hasWatchLaterEntry o watchLaterContent.</rdfs:comment>
-        <rdfs:label xml:lang="en">has watch later content</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#hasWatchLaterEntry -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasWatchLaterEntry">
@@ -565,22 +481,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#hasWatchedContent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasWatchedContent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#watchedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#hasViewingEvent"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#viewedContent"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Inferred summary relation. Relates a user to the audiovisual content they have watched. Inferred via chain: hasViewingEvent o viewedContent.</rdfs:comment>
-        <rdfs:label xml:lang="en">has watched content</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#isAvailableLanguageOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isAvailableLanguageOf">
@@ -592,21 +492,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#isAvailableOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isAvailableOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#hasAvailability"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#availableOnPlatform"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment xml:lang="en">Inferred summary property. Relates audiovisual content to the streaming platforms where it is available. Inferred via chain: hasAvailability o availableOnPlatform. Inverse of hasAvailableContent.</rdfs:comment>
-        <rdfs:label xml:lang="en">is available on</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#isGenreOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isGenreOf">
@@ -614,17 +499,6 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:comment xml:lang="en">Inverse of hasGenre. Relates a genre to the audiovisual content belonging to it.</rdfs:comment>
         <rdfs:label xml:lang="en">is genre of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#isInWatchLaterList -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#isInWatchLaterList">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
-        <rdfs:comment xml:lang="en">Inverse of hasWatchLaterContent. Relates audiovisual content to the watch-later lists it appears in.</rdfs:comment>
-        <rdfs:label xml:lang="en">is in watch later list</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -858,17 +732,6 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
         <rdfs:comment xml:lang="en">Functional and inverse-functional. Relates a watch-later list to its owner user. Inverse of hasWatchLaterList.</rdfs:comment>
         <rdfs:label xml:lang="en">watch later list of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#watchedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#watchedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">Inverse of hasWatchedContent. Relates audiovisual content to the users who have watched it.</rdfs:comment>
-        <rdfs:label xml:lang="en">watched by</rdfs:label>
     </owl:ObjectProperty>
     
 
