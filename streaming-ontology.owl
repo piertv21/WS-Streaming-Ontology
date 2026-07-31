@@ -1685,13 +1685,647 @@
     
 
 
+    <!-- http://dbpedia.org/resource/Aaron_Paul -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Aaron_Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-08-27</birthDate>
+        <rdfs:label xml:lang="en">Aaron Paul</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Action_film -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Action_film">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Amazon_Prime_Video -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Amazon_Prime_Video">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
+        <rdfs:label xml:lang="en">Amazon Prime Video</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Anne_Hathaway -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Anne_Hathaway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-11-12</birthDate>
+        <rdfs:label xml:lang="en">Anne Hathaway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Blade_Runner_2049 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blade_Runner_2049">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_BR2049"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Science_fiction_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Legendary_Entertainment"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT163M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</releaseDate>
+        <title>Blade Runner 2049</title>
+        <rdfs:label xml:lang="en">Blade Runner 2049</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Breaking_Bad -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Breaking_Bad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Cranston_BB"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Paul_BB"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Vince_Gilligan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Crime_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-20</releaseDate>
+        <title>Breaking Bad</title>
+        <rdfs:label xml:lang="en">Breaking Bad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bryan_Cranston -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bryan_Cranston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-03-07</birthDate>
+        <rdfs:label xml:lang="en">Bryan Cranston</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Christian_Bale -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christian_Bale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-01-30</birthDate>
+        <rdfs:label xml:lang="en">Christian Bale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Christopher_Nolan -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christopher_Nolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-07-30</birthDate>
+        <rdfs:label xml:lang="en">Christopher Nolan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cillian_Murphy -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cillian_Murphy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-05-25</birthDate>
+        <rdfs:label xml:lang="en">Cillian Murphy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Crime_film -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Crime_film">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">Crime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Denis_Villeneuve -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Denis_Villeneuve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-10-03</birthDate>
+        <rdfs:label xml:lang="en">Denis Villeneuve</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Emma_Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Emma_Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-11-13</birthDate>
+        <rdfs:label xml:lang="en">Emma Thomas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/English_language -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/English_language">
+        <rdf:type rdf:resource="https://schema.org/Language"/>
+        <rdfs:label xml:lang="en">English</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Helen_McCrory -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Helen_McCrory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-08-17</birthDate>
+        <rdfs:label xml:lang="en">Helen McCrory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Inception -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Inception">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Inception"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Inception"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Science_fiction_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Inception"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Inception"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Inception"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Inception"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT148M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-16</releaseDate>
+        <title>Inception</title>
+        <rdfs:label xml:lang="en">Inception</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jack_Nicholson -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jack_Nicholson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-04-22</birthDate>
+        <rdfs:label xml:lang="en">Jack Nicholson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Legendary_Entertainment -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Legendary_Entertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
+        <rdfs:label xml:lang="en">Legendary Pictures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Leonardo_DiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Leonardo_DiCaprio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-11-11</birthDate>
+        <rdfs:label xml:lang="en">Leonardo DiCaprio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Martin_Scorsese -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Martin_Scorsese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-11-17</birthDate>
+        <rdfs:label xml:lang="en">Martin Scorsese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Mary_Parent -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mary_Parent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
+        <rdfs:label xml:lang="en">Mary Parent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Matthew_McConaughey -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Matthew_McConaughey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-11-04</birthDate>
+        <rdfs:label xml:lang="en">Matthew McConaughey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Netflix -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
+        <rdfs:label xml:lang="en">Netflix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Paramount_Pictures -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Paramount_Pictures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
+        <rdfs:label xml:lang="en">Paramount Pictures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rebecca_Ferguson -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rebecca_Ferguson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-10-19</birthDate>
+        <rdfs:label xml:lang="en">Rebecca Ferguson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Science_fiction_film -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Science_fiction_film">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">Science Fiction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Steven_Knight -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Steven_Knight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-08-05</birthDate>
+        <rdfs:label xml:lang="en">Steven Knight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Syncopy_Inc. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Syncopy_Inc.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
+        <rdfs:label xml:lang="en">Syncopy Films</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/The_Dark_Knight -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Dark_Knight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDK"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_TDK"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Crime_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_TDK"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT152M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-07-18</releaseDate>
+        <title>The Dark Knight</title>
+        <rdfs:label xml:lang="en">The Dark Knight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/The_Dark_Knight_Rises -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Dark_Knight_Rises">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDKR"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_TDKR"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_TDKR"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Crime_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_TDKR"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT164M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-20</releaseDate>
+        <title>The Dark Knight Rises</title>
+        <rdfs:label xml:lang="en">The Dark Knight Rises</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/The_Departed -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Departed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Departed"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Nicholson_Departed"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Martin_Scorsese"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Crime_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Departed"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT151M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-06</releaseDate>
+        <title>The Departed</title>
+        <rdfs:label xml:lang="en">The Departed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Thriller_film -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Thriller_film">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">Thriller</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Timothée_Chalamet -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Timothée_Chalamet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-27</birthDate>
+        <rdfs:label xml:lang="en">Timothée Chalamet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Tom_Hardy -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tom_Hardy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-09-15</birthDate>
+        <rdfs:label xml:lang="en">Tom Hardy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/United_Kingdom -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/United_Kingdom">
+        <rdf:type rdf:resource="https://schema.org/Country"/>
+        <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/United_States -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/United_States">
+        <rdf:type rdf:resource="https://schema.org/Country"/>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Vince_Gilligan -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Vince_Gilligan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-02-10</birthDate>
+        <rdfs:label xml:lang="en">Vince Gilligan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/War_film -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/War_film">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">War</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Warner_Bros._Pictures -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Warner_Bros._Pictures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
+        <rdfs:label xml:lang="en">Warner Bros. Pictures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Apple_TV%2B -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Apple_TV%2B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
+        <rdfs:label xml:lang="en">Apple TV+</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Drama_(film_and_television) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Drama_(film_and_television)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
+        <rdfs:label xml:lang="en">Drama</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dune_(2021_film) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dune_(2021_film)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Chalamet_Dune"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_Dune"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Science_fiction_film"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Legendary_Entertainment"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT155M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-03</releaseDate>
+        <title>Dune</title>
+        <rdfs:label xml:lang="en">Dune</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dunkirk_(film) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dunkirk_(film)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Dunkirk"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Dunkirk"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/War_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT106M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-19</releaseDate>
+        <title>Dunkirk</title>
+        <rdfs:label xml:lang="en">Dunkirk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Interstellar_(film) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Interstellar_(film)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_Interstellar"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McConaughey_Interstellar"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Interstellar"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Science_fiction_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Paramount_Pictures"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Interstellar"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Interstellar"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Interstellar"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT169M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-07</releaseDate>
+        <title>Interstellar</title>
+        <rdfs:label xml:lang="en">Interstellar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Oppenheimer_(film) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Oppenheimer_(film)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Oppenheimer"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Mary_Parent"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Legendary_Entertainment"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Oppenheimer"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Oppenheimer"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT180M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-21</releaseDate>
+        <title>Oppenheimer</title>
+        <rdfs:label xml:lang="en">Oppenheimer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Peaky_Blinders_(TV_series) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McCrory_PB"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_PB"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Steven_Knight"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Crime_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Drama_(film_and_television)"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <hasSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-12</releaseDate>
+        <title>Peaky Blinders</title>
+        <rdfs:label xml:lang="en">Peaky Blinders</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Tenet_(film) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tenet_(film)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
+        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Tenet"/>
+        <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Action_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Science_fiction_film"/>
+        <hasGenre rdf:resource="http://dbpedia.org/resource/Thriller_film"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
+        <hasOriginalLanguage rdf:resource="http://dbpedia.org/resource/English_language"/>
+        <hasProducer rdf:resource="http://dbpedia.org/resource/Emma_Thomas"/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Syncopy_Inc."/>
+        <hasProductionCompany rdf:resource="http://dbpedia.org/resource/Warner_Bros._Pictures"/>
+        <hasProductionCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Tenet"/>
+        <hasScreenwriter rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT150M</contentDuration>
+        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-26</releaseDate>
+        <title>Tenet</title>
+        <rdfs:label xml:lang="en">Tenet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/streaming-ontology#Avail_BB_Netflix -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_BB_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Breaking Bad availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1702,9 +2336,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_BR2049_Prime">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Amazon_Prime_Video"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Blade Runner 2049 availability on Prime Video</rdfs:label>
     </owl:NamedIndividual>
@@ -1715,9 +2349,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Departed_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">The Departed availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1728,9 +2362,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Dune_Prime">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Amazon_Prime_Video"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-15T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Dune availability on Prime Video</rdfs:label>
     </owl:NamedIndividual>
@@ -1741,9 +2375,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Dunkirk_Prime">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Amazon_Prime_Video"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-04-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Dunkirk availability on Prime Video</rdfs:label>
     </owl:NamedIndividual>
@@ -1754,9 +2388,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Inception_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Inception"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Inception availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1767,9 +2401,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Interstellar_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Interstellar availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1780,9 +2414,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Oppenheimer_Apple">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_AppleTV"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Apple_TV%2B"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-21T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Oppenheimer availability on Apple TV+</rdfs:label>
     </owl:NamedIndividual>
@@ -1793,9 +2427,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_PB_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Peaky Blinders availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1806,9 +2440,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_TDKR_Apple">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_AppleTV"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Apple_TV%2B"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">The Dark Knight Rises availability on Apple TV+</rdfs:label>
     </owl:NamedIndividual>
@@ -1819,9 +2453,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_TDK_Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_Netflix"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Netflix"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">The Dark Knight availability on Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1832,9 +2466,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Avail_Tenet_Prime">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
-        <availabilityOfContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
-        <availableInCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <availableOnPlatform rdf:resource="http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo"/>
+        <availabilityOfContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
+        <availableInCountry rdf:resource="http://dbpedia.org/resource/United_States"/>
+        <availableOnPlatform rdf:resource="http://dbpedia.org/resource/Amazon_Prime_Video"/>
         <availabilityStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-01T00:00:00</availabilityStartDate>
         <rdfs:label xml:lang="en">Tenet availability on Prime Video</rdfs:label>
     </owl:NamedIndividual>
@@ -2061,679 +2695,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#Company_Legendary -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Company_Legendary">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
-        <rdfs:label xml:lang="en">Legendary Pictures</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Legendary_Pictures"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Company_Paramount -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Company_Paramount">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
-        <rdfs:label xml:lang="en">Paramount Pictures</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Paramount_Pictures"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Company_Syncopy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Company_Syncopy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
-        <rdfs:label xml:lang="en">Syncopy Films</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Syncopy_Inc."/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Company_WarnerBros -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
-        <rdfs:label xml:lang="en">Warner Bros. Pictures</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Warner_Bros._Pictures"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom">
-        <rdf:type rdf:resource="https://schema.org/Country"/>
-        <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/United_Kingdom"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Country_UnitedStates -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates">
-        <rdf:type rdf:resource="https://schema.org/Country"/>
-        <rdfs:label xml:lang="en">United States</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/United_States"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_Action -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_Action">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">Action</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Action_film"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_Crime -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_Crime">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">Crime</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Crime_film"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_Drama -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_Drama">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">Drama</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Drama_(film_and_television)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">Science Fiction</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Science_fiction_film"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_Thriller -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_Thriller">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">Thriller</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Thriller_film"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Genre_War -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Genre_War">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre"/>
-        <rdfs:label xml:lang="en">War</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/War_film"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Language_English -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Language_English">
-        <rdf:type rdf:resource="https://schema.org/Language"/>
-        <rdfs:label xml:lang="en">English</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/English_language"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_BR2049"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Legendary"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT163M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Blade_Runner_2049</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</releaseDate>
-        <title>Blade Runner 2049</title>
-        <rdfs:label xml:lang="en">Blade Runner 2049</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Blade_Runner_2049"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Dune -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Dune">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Chalamet_Dune"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_Dune"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Legendary"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT155M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Dune_(2021_film)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-03</releaseDate>
-        <title>Dune</title>
-        <rdfs:label xml:lang="en">Dune</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Dune_(2021_film)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Dunkirk"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Dunkirk"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_War"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT106M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Dunkirk_(film)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-19</releaseDate>
-        <title>Dunkirk</title>
-        <rdfs:label xml:lang="en">Dunkirk</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Dunkirk_(film)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Inception -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Inception">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Inception"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Inception"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Inception"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Inception"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Inception"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT148M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Inception</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-16</releaseDate>
-        <title>Inception</title>
-        <rdfs:label xml:lang="en">Inception</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Inception"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Interstellar -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_Interstellar"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McConaughey_Interstellar"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Interstellar"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Paramount"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Interstellar"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Interstellar"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Interstellar"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT169M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Interstellar_(film)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-07</releaseDate>
-        <title>Interstellar</title>
-        <rdfs:label xml:lang="en">Interstellar</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Interstellar_(film)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Oppenheimer"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_MaryParent"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Legendary"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Oppenheimer"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Oppenheimer"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT180M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Oppenheimer_(film)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-21</releaseDate>
-        <title>Oppenheimer</title>
-        <rdfs:label xml:lang="en">Oppenheimer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Oppenheimer_(film)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_Tenet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Tenet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Tenet"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_ScienceFiction"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Tenet"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT150M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Tenet_(film)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-26</releaseDate>
-        <title>Tenet</title>
-        <rdfs:label xml:lang="en">Tenet</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Tenet_(film)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDK"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_TDK"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Crime"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_TDK"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT152M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/The_Dark_Knight</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-07-18</releaseDate>
-        <title>The Dark Knight</title>
-        <rdfs:label xml:lang="en">The Dark Knight</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/The_Dark_Knight"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDKR"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_TDKR"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_TDKR"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Action"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Crime"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProducer rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_Syncopy"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Alice_TDKR"/>
-        <hasScreenwriter rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT164M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/The_Dark_Knight_Rises</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-20</releaseDate>
-        <title>The Dark Knight Rises</title>
-        <rdfs:label xml:lang="en">The Dark Knight Rises</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/The_Dark_Knight_Rises"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Departed"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Nicholson_Departed"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_MartinScorsese"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Crime"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProductionCompany rdf:resource="http://www.semanticweb.org/streaming-ontology#Company_WarnerBros"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Departed"/>
-        <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT151M</contentDuration>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/The_Departed</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-06</releaseDate>
-        <title>The Departed</title>
-        <rdfs:label xml:lang="en">The Departed</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/The_Departed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_AaronPaul -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_AaronPaul">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-08-27</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Aaron_Paul</externalIdentifier>
-        <rdfs:label xml:lang="en">Aaron Paul</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Aaron_Paul"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_AnneHathaway -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_AnneHathaway">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-11-12</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Anne_Hathaway</externalIdentifier>
-        <rdfs:label xml:lang="en">Anne Hathaway</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Anne_Hathaway"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_BryanCranston -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_BryanCranston">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-03-07</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Bryan_Cranston</externalIdentifier>
-        <rdfs:label xml:lang="en">Bryan Cranston</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Bryan_Cranston"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_ChristianBale -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_ChristianBale">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-01-30</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Christian_Bale</externalIdentifier>
-        <rdfs:label xml:lang="en">Christian Bale</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Christian_Bale"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-07-30</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Christopher_Nolan</externalIdentifier>
-        <rdfs:label xml:lang="en">Christopher Nolan</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Christopher_Nolan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-05-25</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Cillian_Murphy</externalIdentifier>
-        <rdfs:label xml:lang="en">Cillian Murphy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Cillian_Murphy"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-10-03</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Denis_Villeneuve</externalIdentifier>
-        <rdfs:label xml:lang="en">Denis Villeneuve</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Denis_Villeneuve"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_EmmaThomas">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-11-13</birthDate>
-        <rdfs:label xml:lang="en">Emma Thomas</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Emma_Thomas"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_HelenMcCrory -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_HelenMcCrory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-08-17</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Helen_McCrory</externalIdentifier>
-        <rdfs:label xml:lang="en">Helen McCrory</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Helen_McCrory"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_JackNicholson -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_JackNicholson">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-04-22</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Jack_Nicholson</externalIdentifier>
-        <rdfs:label xml:lang="en">Jack Nicholson</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Jack_Nicholson"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_LeonardoDiCaprio -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_LeonardoDiCaprio">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-11-11</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Leonardo_DiCaprio</externalIdentifier>
-        <rdfs:label xml:lang="en">Leonardo DiCaprio</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Leonardo_DiCaprio"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_MartinScorsese -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_MartinScorsese">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-11-17</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Martin_Scorsese</externalIdentifier>
-        <rdfs:label xml:lang="en">Martin Scorsese</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Martin_Scorsese"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_MaryParent -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_MaryParent">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
-        <rdfs:label xml:lang="en">Mary Parent</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Mary_Parent"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_MatthewMcConaughey -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_MatthewMcConaughey">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-11-04</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Matthew_McConaughey</externalIdentifier>
-        <rdfs:label xml:lang="en">Matthew McConaughey</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Matthew_McConaughey"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_RebeccaFerguson -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_RebeccaFerguson">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-10-19</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Rebecca_Ferguson</externalIdentifier>
-        <rdfs:label xml:lang="en">Rebecca Ferguson</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Rebecca_Ferguson"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_StevenKnight -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_StevenKnight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-08-05</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Steven_Knight</externalIdentifier>
-        <rdfs:label xml:lang="en">Steven Knight</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Steven_Knight"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_TimotheeChalamet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_TimotheeChalamet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-27</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Timoth%C3%A9e_Chalamet</externalIdentifier>
-        <rdfs:label xml:lang="en">Timothée Chalamet</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Timoth%C3%A9e_Chalamet"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_TomHardy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_TomHardy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-09-15</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Tom_Hardy</externalIdentifier>
-        <rdfs:label xml:lang="en">Tom Hardy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Tom_Hardy"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Person_VinceGilligan -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Person_VinceGilligan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
-        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-02-10</birthDate>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Vince_Gilligan</externalIdentifier>
-        <rdfs:label xml:lang="en">Vince Gilligan</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Vince_Gilligan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Platform_AppleTV -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Platform_AppleTV">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Apple_TV%2B</externalIdentifier>
-        <rdfs:label xml:lang="en">Apple TV+</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Apple_TV%2B"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Platform_Netflix -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Platform_Netflix">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Netflix</externalIdentifier>
-        <rdfs:label xml:lang="en">Netflix</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Netflix"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Platform_PrimeVideo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Amazon_Prime_Video</externalIdentifier>
-        <rdfs:label xml:lang="en">Amazon Prime Video</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Amazon_Prime_Video"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#Rating_Alice_Inception -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
         <ratingComment>Masterpiece of science fiction and storytelling.</ratingComment>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-10T23:00:00</ratingDate>
@@ -2747,7 +2713,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
         <ratingComment>Visually stunning, emotionally powerful.</ratingComment>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-16T00:30:00</ratingDate>
@@ -2761,7 +2727,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
         <ratingComment>Murphy gives a transcendent performance.</ratingComment>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-05T22:30:00</ratingDate>
@@ -2775,7 +2741,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Alice_TDKR">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-02T00:00:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</ratingValue>
@@ -2788,7 +2754,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Alice_Tenet">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-12T23:30:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</ratingValue>
@@ -2801,7 +2767,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Departed">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
         <ratingComment>DiCaprio at his finest.</ratingComment>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-23T01:00:00</ratingDate>
@@ -2815,7 +2781,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-02-15T00:00:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</ratingValue>
@@ -2828,7 +2794,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Bob_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-19T00:00:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</ratingValue>
@@ -2841,7 +2807,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Bob_TDK">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-11T00:30:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</ratingValue>
@@ -2868,7 +2834,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-09T00:00:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</ratingValue>
@@ -2881,7 +2847,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-15T00:00:00</ratingDate>
         <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</ratingValue>
@@ -2894,7 +2860,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Rating_Carla_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
-        <ratesContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <ratesContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <ratingByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
         <ratingComment>An absolute masterpiece. Murphy is extraordinary.</ratingComment>
         <ratingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-20T23:30:00</ratingDate>
@@ -2922,9 +2888,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDK">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristianBale"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Batman"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
         <roleName>Batman / Bruce Wayne</roleName>
         <rdfs:label xml:lang="en">Bale as Batman in The Dark Knight</rdfs:label>
     </owl:NamedIndividual>
@@ -2935,9 +2901,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDKR">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_ChristianBale"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Batman"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
         <roleName>Batman / Bruce Wayne</roleName>
         <rdfs:label xml:lang="en">Bale as Batman in TDKR</rdfs:label>
     </owl:NamedIndividual>
@@ -2948,9 +2914,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Chalamet_Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_TimotheeChalamet"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Timothée_Chalamet"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_PaulAtreides"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
         <roleName>Paul Atreides</roleName>
         <rdfs:label xml:lang="en">Chalamet as Paul Atreides in Dune</rdfs:label>
     </owl:NamedIndividual>
@@ -2961,9 +2927,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Cranston_BB">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_BryanCranston"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Bryan_Cranston"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_WalterWhite"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <roleName>Walter White</roleName>
         <rdfs:label xml:lang="en">Cranston as Walter White</rdfs:label>
     </owl:NamedIndividual>
@@ -2974,9 +2940,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Departed">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_LeonardoDiCaprio"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_BillyDeparted"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
         <roleName>Billy Costigan</roleName>
         <rdfs:label xml:lang="en">DiCaprio as Costigan in The Departed</rdfs:label>
     </owl:NamedIndividual>
@@ -2987,9 +2953,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_LeonardoDiCaprio"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_DomCobb"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <roleName>Dom Cobb</roleName>
         <rdfs:label xml:lang="en">DiCaprio as Cobb in Inception</rdfs:label>
     </owl:NamedIndividual>
@@ -3000,9 +2966,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_BR2049">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_RebeccaFerguson"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Rebecca_Ferguson"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_LadyJessica"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
         <roleName>Dr. Ana Stelline</roleName>
         <rdfs:label xml:lang="en">Ferguson as Ana Stelline in Blade Runner 2049</rdfs:label>
     </owl:NamedIndividual>
@@ -3013,9 +2979,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_RebeccaFerguson"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Rebecca_Ferguson"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_LadyJessica"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
         <roleName>Lady Jessica</roleName>
         <rdfs:label xml:lang="en">Ferguson as Lady Jessica in Dune</rdfs:label>
     </owl:NamedIndividual>
@@ -3026,9 +2992,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Dunkirk">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_TomHardy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_FarrierDunkirk"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
         <roleName>Farrier</roleName>
         <rdfs:label xml:lang="en">Hardy as Farrier in Dunkirk</rdfs:label>
     </owl:NamedIndividual>
@@ -3039,9 +3005,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_TomHardy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Eames"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <roleName>Eames</roleName>
         <rdfs:label xml:lang="en">Hardy as Eames in Inception</rdfs:label>
     </owl:NamedIndividual>
@@ -3052,9 +3018,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hardy_TDKR">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_TomHardy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Bane"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
         <roleName>Bane</roleName>
         <rdfs:label xml:lang="en">Hardy as Bane in TDKR</rdfs:label>
     </owl:NamedIndividual>
@@ -3065,9 +3031,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Tenet">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_TomHardy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_AndreiBator"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
         <roleName>Andrei Sator</roleName>
         <rdfs:label xml:lang="en">Hardy as Sator in Tenet</rdfs:label>
     </owl:NamedIndividual>
@@ -3078,9 +3044,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_AnneHathaway"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_BrandInterstellar"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <roleName>Dr. Amelia Brand</roleName>
         <rdfs:label xml:lang="en">Hathaway as Brand in Interstellar</rdfs:label>
     </owl:NamedIndividual>
@@ -3091,9 +3057,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_TDKR">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_AnneHathaway"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_SelenaKyle"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
         <roleName>Selina Kyle</roleName>
         <rdfs:label xml:lang="en">Hathaway as Selina Kyle in TDKR</rdfs:label>
     </owl:NamedIndividual>
@@ -3104,9 +3070,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_McConaughey_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_MatthewMcConaughey"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_CooperInterstellar"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <roleName>Cooper</roleName>
         <rdfs:label xml:lang="en">McConaughey as Cooper in Interstellar</rdfs:label>
     </owl:NamedIndividual>
@@ -3117,9 +3083,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_McCrory_PB">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_HelenMcCrory"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Helen_McCrory"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_PollyGray"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <roleName>Polly Gray</roleName>
         <rdfs:label xml:lang="en">McCrory as Polly Gray</rdfs:label>
     </owl:NamedIndividual>
@@ -3130,9 +3096,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Dunkirk">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_TommyDunkirk"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
         <roleName>Tommy</roleName>
         <rdfs:label xml:lang="en">Murphy as Tommy in Dunkirk</rdfs:label>
     </owl:NamedIndividual>
@@ -3143,9 +3109,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_MurphInterstellar"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <roleName>Murph Cooper</roleName>
         <rdfs:label xml:lang="en">Murphy as Murph in Interstellar</rdfs:label>
     </owl:NamedIndividual>
@@ -3156,9 +3122,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Oppenheimer"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <roleName>J. Robert Oppenheimer</roleName>
         <rdfs:label xml:lang="en">Murphy as Oppenheimer</rdfs:label>
     </owl:NamedIndividual>
@@ -3169,9 +3135,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Murphy_PB">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_TommyShelby"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <roleName>Thomas Shelby</roleName>
         <rdfs:label xml:lang="en">Murphy as Thomas Shelby</rdfs:label>
     </owl:NamedIndividual>
@@ -3182,9 +3148,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Murphy_TDK">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_ScarecrrowTDK"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
         <roleName>Scarecrow</roleName>
         <rdfs:label xml:lang="en">Murphy as Scarecrow in The Dark Knight</rdfs:label>
     </owl:NamedIndividual>
@@ -3195,9 +3161,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Nicholson_Departed">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_JackNicholson"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Jack_Nicholson"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_CostelloDeparted"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
         <roleName>Frank Costello</roleName>
         <rdfs:label xml:lang="en">Nicholson as Costello in The Departed</rdfs:label>
     </owl:NamedIndividual>
@@ -3208,9 +3174,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Paul_BB">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <performedBy rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_AaronPaul"/>
+        <performedBy rdf:resource="http://dbpedia.org/resource/Aaron_Paul"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_JessePinkman"/>
-        <roleInContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <roleInContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <roleName>Jesse Pinkman</roleName>
         <rdfs:label xml:lang="en">Paul as Jesse Pinkman</rdfs:label>
     </owl:NamedIndividual>
@@ -3222,7 +3188,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E1">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_BB_S1E1"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT58M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</episodeNumber>
@@ -3237,7 +3203,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E2">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT48M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</episodeNumber>
         <title>Cat&apos;s in the Bag...</title>
@@ -3251,7 +3217,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E3">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT48M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</episodeNumber>
         <title>...and the Bag&apos;s in the River</title>
@@ -3265,7 +3231,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E1">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <hasReceivedRating rdf:resource="http://www.semanticweb.org/streaming-ontology#Rating_Carla_PB_S1E1"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT58M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</episodeNumber>
@@ -3280,7 +3246,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E2">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT58M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</episodeNumber>
         <title>Episode 2</title>
@@ -3294,7 +3260,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E3">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <contentDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT58M</contentDuration>
         <episodeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</episodeNumber>
         <title>Episode 3</title>
@@ -3310,7 +3276,7 @@
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E1"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E2"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E3"/>
-        <seasonOfSeries rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
+        <seasonOfSeries rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
         <seasonNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</seasonNumber>
         <rdfs:label xml:lang="en">Breaking Bad Season 1</rdfs:label>
     </owl:NamedIndividual>
@@ -3324,54 +3290,9 @@
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E1"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E2"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E3"/>
-        <seasonOfSeries rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
+        <seasonOfSeries rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
         <seasonNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</seasonNumber>
         <rdfs:label xml:lang="en">Peaky Blinders Season 1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Cranston_BB"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Paul_BB"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_VinceGilligan"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Crime"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Thriller"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_BreakingBad"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedStates"/>
-        <hasSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Breaking_Bad</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-20</releaseDate>
-        <title>Breaking Bad</title>
-        <rdfs:label xml:lang="en">Breaking Bad</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Breaking_Bad"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders">
-        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McCrory_PB"/>
-        <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_PB"/>
-        <hasDirector rdf:resource="http://www.semanticweb.org/streaming-ontology#Person_StevenKnight"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Crime"/>
-        <hasGenre rdf:resource="http://www.semanticweb.org/streaming-ontology#Genre_Drama"/>
-        <hasMetadataContent rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries_PeakyBlinders"/>
-        <hasOriginalLanguage rdf:resource="http://www.semanticweb.org/streaming-ontology#Language_English"/>
-        <hasProductionCountry rdf:resource="http://www.semanticweb.org/streaming-ontology#Country_UnitedKingdom"/>
-        <hasSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
-        <externalIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Peaky_Blinders_(TV_series)</externalIdentifier>
-        <releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-12</releaseDate>
-        <title>Peaky Blinders</title>
-        <rdfs:label xml:lang="en">Peaky Blinders</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Peaky_Blinders_(TV_series)"/>
     </owl:NamedIndividual>
     
 
@@ -3439,7 +3360,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_BR2049">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-08T19:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT133M</viewingDuration>
@@ -3453,7 +3374,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-20T20:30:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT142M</viewingDuration>
@@ -3467,7 +3388,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-10T20:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT148M</viewingDuration>
@@ -3481,7 +3402,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-15T21:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT164M</viewingDuration>
@@ -3495,7 +3416,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-05T18:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT180M</viewingDuration>
@@ -3509,7 +3430,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_TDK">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-20T19:30:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT144M</viewingDuration>
@@ -3523,7 +3444,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_TDKR">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T20:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT160M</viewingDuration>
@@ -3537,7 +3458,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Alice_Tenet">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Alice"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-12T21:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT150M</viewingDuration>
@@ -3551,7 +3472,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Bob_Departed">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-22T21:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT151M</viewingDuration>
@@ -3565,7 +3486,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Bob_Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-05T22:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT46M</viewingDuration>
@@ -3579,7 +3500,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Bob_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-02-14T20:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT148M</viewingDuration>
@@ -3593,7 +3514,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Bob_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-18T18:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT162M</viewingDuration>
@@ -3607,7 +3528,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Bob_TDK">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Bob"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-10T20:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT136M</viewingDuration>
@@ -3649,7 +3570,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Carla_Dunkirk">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-03T19:30:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT53M</viewingDuration>
@@ -3663,7 +3584,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Carla_Inception">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Inception"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-08T21:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT143M</viewingDuration>
@@ -3677,7 +3598,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Carla_Interstellar">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-14T20:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT160M</viewingDuration>
@@ -3691,7 +3612,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#VE_Carla_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <viewedByUser rdf:resource="http://www.semanticweb.org/streaming-ontology#User_Carla"/>
-        <viewedContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <viewedContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <completionPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98.00</completionPercentage>
         <viewingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-20T19:00:00</viewingDate>
         <viewingDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT176M</viewingDuration>
@@ -3747,7 +3668,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#WLE_Alice_BR2049">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <entryInWatchLaterList rdf:resource="http://www.semanticweb.org/streaming-ontology#WLL_Alice"/>
-        <watchLaterContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
+        <watchLaterContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
         <addedToWatchLaterOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-10T19:00:00</addedToWatchLaterOn>
         <watchLaterPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</watchLaterPosition>
         <rdfs:label xml:lang="en">Alice WLE Blade Runner 2049</rdfs:label>
@@ -3760,7 +3681,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#WLE_Alice_Dunkirk">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <entryInWatchLaterList rdf:resource="http://www.semanticweb.org/streaming-ontology#WLL_Alice"/>
-        <watchLaterContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
+        <watchLaterContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
         <addedToWatchLaterOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-05T20:00:00</addedToWatchLaterOn>
         <watchLaterPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</watchLaterPosition>
         <rdfs:label xml:lang="en">Alice WLE Dunkirk</rdfs:label>
@@ -3773,7 +3694,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#WLE_Bob_Oppenheimer">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <entryInWatchLaterList rdf:resource="http://www.semanticweb.org/streaming-ontology#WLL_Bob"/>
-        <watchLaterContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
+        <watchLaterContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
         <addedToWatchLaterOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T21:00:00</addedToWatchLaterOn>
         <watchLaterPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</watchLaterPosition>
         <rdfs:label xml:lang="en">Bob WLE Oppenheimer</rdfs:label>
@@ -3786,7 +3707,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#WLE_Carla_Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <entryInWatchLaterList rdf:resource="http://www.semanticweb.org/streaming-ontology#WLL_Carla"/>
-        <watchLaterContent rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
+        <watchLaterContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
         <addedToWatchLaterOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T18:00:00</addedToWatchLaterOn>
         <watchLaterPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</watchLaterPosition>
         <rdfs:label xml:lang="en">Carla WLE Dune</rdfs:label>
@@ -3866,38 +3787,38 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_BladeRunner2049"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Dune"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Dunkirk"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Inception"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Interstellar"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Oppenheimer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_Tenet"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnight"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDarkKnightRises"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie_TheDeparted"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Aaron_Paul"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Anne_Hathaway"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Bryan_Cranston"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Christian_Bale"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Christopher_Nolan"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Cillian_Murphy"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Denis_Villeneuve"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Helen_McCrory"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Jack_Nicholson"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Martin_Scorsese"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Matthew_McConaughey"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Rebecca_Ferguson"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Steven_Knight"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Timothée_Chalamet"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Tom_Hardy"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Vince_Gilligan"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_AaronPaul"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_AnneHathaway"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_BryanCranston"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_ChristianBale"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_ChristopherNolan"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_CillianMurphy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_DenisVilleneuve"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_HelenMcCrory"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_JackNicholson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_LeonardoDiCaprio"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_MartinScorsese"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_MatthewMcConaughey"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_RebeccaFerguson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_StevenKnight"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_TimotheeChalamet"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_TomHardy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Person_VinceGilligan"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Blade_Runner_2049"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Inception"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/The_Dark_Knight"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/The_Departed"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Dune_(2021_film)"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Dunkirk_(film)"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Interstellar_(film)"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Oppenheimer_(film)"/>
+            <rdf:Description rdf:about="http://dbpedia.org/resource/Tenet_(film)"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
