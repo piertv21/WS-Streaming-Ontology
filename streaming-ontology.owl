@@ -123,7 +123,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a content availability record to the single content item it concerns. Inverse of hasAvailability.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a content availability record to the single content item it concerns. Inverse of hasAvailability.</rdfs:comment>
         <rdfs:label xml:lang="en">availability of content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -147,7 +147,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a content availability record to the streaming platform it pertains to.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a content availability record to the streaming platform it pertains to.</rdfs:comment>
         <rdfs:label xml:lang="en">available on platform</rdfs:label>
     </owl:ObjectProperty>
     
@@ -172,7 +172,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a watch-later entry to the list it belongs to. Inverse of hasWatchLaterEntry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a watch-later entry to the list it belongs to. Inverse of hasWatchLaterEntry.</rdfs:comment>
         <rdfs:label xml:lang="en">entry in watch later list</rdfs:label>
     </owl:ObjectProperty>
     
@@ -185,7 +185,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
-        <rdfs:comment xml:lang="en">Functional. Relates an episode to the season it belongs to. Inverse of hasSeasonEpisode.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an episode to the season it belongs to. Inverse of hasSeasonEpisode.</rdfs:comment>
         <rdfs:label xml:lang="en">episode of season</rdfs:label>
     </owl:ObjectProperty>
     
@@ -218,9 +218,16 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/streaming-ontology#hasBeenViewedIn">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/streaming-ontology#viewedContent"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#Movie"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
-        <rdfs:comment xml:lang="en">Inverse of viewedContent. Relates audiovisual content to the viewing events in which it was watched.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of viewedContent. Relates audiovisual content to the viewing events in which it was watched. Domain restricted to Movie or TVEpisode, mirroring the range restriction on viewedContent: since TVSeries and TVSeason are never the direct object of a viewing event, asserting this property on them would force the reasoner, via the inverse, to also classify them as Movie or TVEpisode, contradicting their declared pairwise disjointness.</rdfs:comment>
         <rdfs:label xml:lang="en">has been viewed in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -257,7 +264,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Functional. Relates an audiovisual content item to the single content item that carries its descriptive metadata (acting roles, director, genre). For an episode this is its parent series; for a series or a film it is the item itself. Asserted directly on each content item, so per-episode metadata does not need to be repeated.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an audiovisual content item to the single content item that carries its descriptive metadata (acting roles, director, genre). For an episode this is its parent series; for a series or a film it is the item itself. Asserted directly on each content item, so per-episode metadata does not need to be repeated.</rdfs:comment>
         <rdfs:label xml:lang="en">has metadata content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -270,7 +277,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="https://schema.org/Language"/>
-        <rdfs:comment xml:lang="en">Functional. Relates audiovisual content to its original language.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates audiovisual content to its original language.</rdfs:comment>
         <rdfs:label xml:lang="en">has original language</rdfs:label>
     </owl:ObjectProperty>
     
@@ -440,7 +447,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a user to their single watch-later list.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a user to their single watch-later list.</rdfs:comment>
         <rdfs:label xml:lang="en">has watch later list</rdfs:label>
     </owl:ObjectProperty>
     
@@ -497,7 +504,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
-        <rdfs:comment xml:lang="en">Functional. Relates an acting role to the single actor who performs it. Inverse of performsRole.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an acting role to the single actor who performs it. Inverse of performsRole.</rdfs:comment>
         <rdfs:label xml:lang="en">performed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -532,7 +539,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#Character"/>
-        <rdfs:comment xml:lang="en">Functional. Relates an acting role to the character it portrays.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an acting role to the character it portrays.</rdfs:comment>
         <rdfs:label xml:lang="en">portrays character</rdfs:label>
     </owl:ObjectProperty>
     
@@ -566,7 +573,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a rating record to the audiovisual content item being rated.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a rating record to the audiovisual content item being rated.</rdfs:comment>
         <rdfs:label xml:lang="en">rates content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -578,7 +585,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a rating to the user who submitted it. Inverse of hasUserRating.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a rating to the user who submitted it. Inverse of hasUserRating.</rdfs:comment>
         <rdfs:label xml:lang="en">rating by user</rdfs:label>
     </owl:ObjectProperty>
     
@@ -590,7 +597,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a reified acting role to the single content item in which it occurs. Inverse of hasActingRole.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a reified acting role to the single content item in which it occurs. Inverse of hasActingRole.</rdfs:comment>
         <rdfs:label xml:lang="en">role in content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -602,7 +609,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a TV season to its parent TV series. Inverse of hasSeason.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a TV season to its parent TV series. Inverse of hasSeason.</rdfs:comment>
         <rdfs:label xml:lang="en">season of series</rdfs:label>
     </owl:ObjectProperty>
     
@@ -647,7 +654,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a viewing event to the user who initiated it. Inverse of hasViewingEvent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a viewing event to the user who initiated it. Inverse of hasViewingEvent.</rdfs:comment>
         <rdfs:label xml:lang="en">viewed by user</rdfs:label>
     </owl:ObjectProperty>
     
@@ -666,7 +673,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">Functional. Relates a viewing event to the single content item that was viewed. Range restricted to Movie or TVEpisode: viewing events always refer to directly watchable items; their descriptive metadata is reached through hasMetadataContent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a viewing event to the single content item that was viewed. Range restricted to Movie or TVEpisode: viewing events always refer to directly watchable items; their descriptive metadata is reached through hasMetadataContent.</rdfs:comment>
         <rdfs:label xml:lang="en">viewed content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -678,7 +685,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-        <rdfs:comment xml:lang="en">Functional. Relates a watch-later entry to the audiovisual content it references.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a watch-later entry to the audiovisual content it references.</rdfs:comment>
         <rdfs:label xml:lang="en">watch later content</rdfs:label>
     </owl:ObjectProperty>
     
@@ -691,7 +698,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterList"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">Functional and inverse-functional. Relates a watch-later list to its owner user. Inverse of hasWatchLaterList.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a watch-later list to its owner user. Inverse of hasWatchLaterList.</rdfs:comment>
         <rdfs:label xml:lang="en">watch later list of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -773,7 +780,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional. The date and time when the content was added to the watch-later list.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time when the content was added to the watch-later list.</rdfs:comment>
         <rdfs:label xml:lang="en">added to watch later on</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -785,7 +792,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional, optional. The date and time at which the content ceases to be available on a platform.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time at which the content ceases to be available on a platform.</rdfs:comment>
         <rdfs:label xml:lang="en">availability end date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -797,7 +804,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ContentAvailability"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional. The date and time from which the content becomes available on a platform.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time from which the content becomes available on a platform.</rdfs:comment>
         <rdfs:label xml:lang="en">availability start date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -809,7 +816,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://schema.org/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en">Functional, optional. The date of birth of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of birth of a person.</rdfs:comment>
         <rdfs:label xml:lang="en">birth date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -821,7 +828,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#Character"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Functional. The name of a fictional or represented character.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of a fictional or represented character.</rdfs:comment>
         <rdfs:label xml:lang="en">character name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -833,7 +840,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#PercentageValue"/>
-        <rdfs:comment xml:lang="en">Functional. The percentage of the content item watched (0–100 inclusive, at most 2 fractional digits).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The percentage of the content item watched (0–100 inclusive, at most 2 fractional digits).</rdfs:comment>
         <rdfs:label xml:lang="en">completion percentage</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -846,7 +853,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-        <rdfs:comment xml:lang="en">Functional. The runtime duration of an audiovisual content item. Aligned with schema:duration.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The runtime duration of an audiovisual content item. Aligned with schema:duration.</rdfs:comment>
         <rdfs:label xml:lang="en">content duration</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -857,7 +864,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/streaming-ontology#description">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Optional free-text description of a domain entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Free-text description of a domain entity.</rdfs:comment>
         <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -869,7 +876,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Functional. At most one preferred local name for a domain entity. Supports application data in addition to rdfs:label.</rdfs:comment>
+        <rdfs:comment xml:lang="en">At most one preferred local name for a domain entity. Supports application data in addition to rdfs:label.</rdfs:comment>
         <rdfs:label xml:lang="en">entity name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -881,7 +888,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">Functional. The ordinal number of a TV episode within its season.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ordinal number of a TV episode within its season.</rdfs:comment>
         <rdfs:label xml:lang="en">episode number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -892,7 +899,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/streaming-ontology#externalIdentifier">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Optional external identifier (e.g., IMDb ID, DBpedia IRI) for a domain entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External identifier (e.g., IMDb ID, DBpedia IRI) for a domain entity.</rdfs:comment>
         <rdfs:label xml:lang="en">external identifier</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -903,7 +910,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/streaming-ontology#ratingComment">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Optional. A free-text comment accompanying the user rating.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A free-text comment accompanying the user rating.</rdfs:comment>
         <rdfs:label xml:lang="en">rating comment</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -915,7 +922,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional, exactly one. The date and time when the rating was submitted.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time when the rating was submitted.</rdfs:comment>
         <rdfs:label xml:lang="en">rating date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -928,7 +935,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#UserRating"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/streaming-ontology#RatingValue"/>
-        <rdfs:comment xml:lang="en">Functional, exactly one. A decimal score in [0.0, 10.0] representing the user&apos;s rating (maximum one fractional digit).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A decimal score in [0.0, 10.0] representing the user&apos;s rating (maximum one fractional digit).</rdfs:comment>
         <rdfs:label xml:lang="en">rating value</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -940,7 +947,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional. The date and time when the user registered on the platform.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time when the user registered on the platform.</rdfs:comment>
         <rdfs:label xml:lang="en">registration date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -952,7 +959,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en">Functional, optional. The original release date of an audiovisual content item.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The original release date of an audiovisual content item.</rdfs:comment>
         <rdfs:label xml:lang="en">release date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -964,7 +971,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">Functional. The ordinal number of a TV season within its series.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ordinal number of a TV season within its series.</rdfs:comment>
         <rdfs:label xml:lang="en">season number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -976,7 +983,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Functional. The title of an audiovisual content item.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The title of an audiovisual content item.</rdfs:comment>
         <rdfs:label xml:lang="en">title</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -988,7 +995,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Functional. A unique identifier string for a user (e.g., username or account ID).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A unique identifier string for a user (e.g., username or account ID).</rdfs:comment>
         <rdfs:label xml:lang="en">user identifier</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1000,7 +1007,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Functional, exactly one. The date and time when the viewing event occurred.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date and time when the viewing event occurred.</rdfs:comment>
         <rdfs:label xml:lang="en">viewing date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1012,7 +1019,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ViewingEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-        <rdfs:comment xml:lang="en">Functional, exactly one. The total duration of the viewing session.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The total duration of the viewing session.</rdfs:comment>
         <rdfs:label xml:lang="en">viewing duration</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1024,7 +1031,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#WatchLaterEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">Functional, optional. The ordinal position of an entry within a watch-later list.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ordinal position of an entry within a watch-later list.</rdfs:comment>
         <rdfs:label xml:lang="en">watch later position</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1056,6 +1063,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://dbpedia.org/ontology/Film -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Movie"/>
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to type Movie individuals reused from DBpedia. Declared as a subclass of schema:Movie rather than equivalent to it, since dbo:Film denotes theatrically released feature films specifically, while schema:Movie is the broader vocabulary term that also covers TV movies and other made-for-video releases.</rdfs:comment>
+        <rdfs:label xml:lang="en">Film</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1589,7 +1607,7 @@
 
     <owl:Class rdf:about="https://schema.org/Movie">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:Movie.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:Movie. dbo:Film is declared as a subclass of this class.</rdfs:comment>
         <rdfs:label xml:lang="en">Movie</rdfs:label>
     </owl:Class>
     
@@ -1707,6 +1725,7 @@
     <!-- http://dbpedia.org/resource/Blade_Runner_2049 -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blade_Runner_2049">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_BR2049"/>
         <hasDirector rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
@@ -1840,6 +1859,7 @@
     <!-- http://dbpedia.org/resource/Inception -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Inception">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Inception"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Inception"/>
@@ -1985,6 +2005,7 @@
     <!-- http://dbpedia.org/resource/The_Dark_Knight -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Dark_Knight">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDK"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_TDK"/>
@@ -2012,6 +2033,7 @@
     <!-- http://dbpedia.org/resource/The_Dark_Knight_Rises -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Dark_Knight_Rises">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Bale_TDKR"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_TDKR"/>
@@ -2039,6 +2061,7 @@
     <!-- http://dbpedia.org/resource/The_Departed -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Departed">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_DiCaprio_Departed"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Nicholson_Departed"/>
@@ -2156,6 +2179,7 @@
     <!-- http://dbpedia.org/resource/Dune_(2021_film) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dune_(2021_film)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Chalamet_Dune"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_Dune"/>
@@ -2178,6 +2202,7 @@
     <!-- http://dbpedia.org/resource/Dunkirk_(film) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dunkirk_(film)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Dunkirk"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Dunkirk"/>
@@ -2203,6 +2228,7 @@
     <!-- http://dbpedia.org/resource/Interstellar_(film) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Interstellar_(film)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hathaway_Interstellar"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McConaughey_Interstellar"/>
@@ -2232,6 +2258,7 @@
     <!-- http://dbpedia.org/resource/Oppenheimer_(film) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Oppenheimer_(film)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_Oppenheimer"/>
         <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
@@ -2278,6 +2305,7 @@
     <!-- http://dbpedia.org/resource/Tenet_(film) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tenet_(film)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Movie"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Hardy_Tenet"/>
         <hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
@@ -3911,7 +3939,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has rated (4.0 or higher) two distinct content items that share a common actor (read via hasMetadataContent, then the reified acting role hasActingRole/performedBy), that actor is suggested to the user.</rdfs:comment>
         <rdfs:label>RecommendActor</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -4196,7 +4224,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has rated (4.0 or higher) two distinct content items that share a common genre (read via hasMetadataContent, then hasGenre), that genre is suggested to the user.</rdfs:comment>
         <rdfs:label>RecommendGenre</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -4455,7 +4483,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has completed (95% or higher) a content item, any other content item that shares the same director and genre (read via hasMetadataContent) is suggested to the user, on the assumption of thematic continuity.</rdfs:comment>
         <rdfs:label>RecommendContent</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -4653,7 +4681,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has two distinct viewing events, each with a completion percentage of 80% or higher, of content items that share a common actor (read via hasMetadataContent, then the reified acting role hasActingRole/performedBy), that actor is inferred as one of the user&apos;s preferred actors.</rdfs:comment>
         <rdfs:label>PreferredActor</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -4914,7 +4942,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has two distinct viewing events, each with a completion percentage of 80% or higher, of content items that share a common director (read via hasMetadataContent, then hasDirector), that director is inferred as one of the user&apos;s preferred directors.</rdfs:comment>
         <rdfs:label>PreferredDirector</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -5149,7 +5177,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">If a user has two distinct viewing events, each with a completion percentage of 80% or higher, of content items that share a common genre (read via hasMetadataContent, then hasGenre), that genre is inferred as one of the user&apos;s preferred genres.</rdfs:comment>
         <rdfs:label>PreferredGenre</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -5384,7 +5412,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">A user who has at least three distinct viewing events is classified as a highly engaged user.</rdfs:comment>
         <rdfs:label>HighlyEngagedUser</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -5491,7 +5519,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">A user who has at least two distinct viewing events with a completion percentage of 95% or higher is classified as a content completer.</rdfs:comment>
         <rdfs:label>ContentCompleter</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -5635,7 +5663,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">A viewing event with a completion percentage of 95% or higher is classified as a completed viewing event.</rdfs:comment>
         <rdfs:label>CompletedViewingEvent</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -5704,7 +5732,7 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="en">A viewing event with a completion percentage below 95% is classified as a partial (abandoned or unfinished) viewing event.</rdfs:comment>
         <rdfs:label>PartialViewingEvent</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
