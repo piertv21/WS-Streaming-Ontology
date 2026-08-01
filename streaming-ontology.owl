@@ -958,18 +958,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/streaming-ontology#roleName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/streaming-ontology#roleName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Functional. The name of the acting role (e.g., character name as billed in the credits).</rdfs:comment>
-        <rdfs:label xml:lang="en">role name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/streaming-ontology#seasonNumber -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/streaming-ontology#seasonNumber">
@@ -1094,13 +1082,6 @@
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/streaming-ontology#roleInContent"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/streaming-ontology#AudiovisualContent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/streaming-ontology#roleName"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A reified participation node connecting a performer, a character, and an audiovisual content item to capture role details.</rdfs:comment>
@@ -2475,6 +2456,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/streaming-ontology#Char_AnaStelline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Char_AnaStelline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Character"/>
+        <characterName>Dr. Ana Stelline</characterName>
+        <rdfs:label xml:lang="en">Dr. Ana Stelline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/streaming-ontology#Char_AndreiBator -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Char_AndreiBator">
@@ -2891,7 +2882,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Batman"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
-        <roleName>Batman / Bruce Wayne</roleName>
         <rdfs:label xml:lang="en">Bale as Batman in The Dark Knight</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2904,7 +2894,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Batman"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
-        <roleName>Batman / Bruce Wayne</roleName>
         <rdfs:label xml:lang="en">Bale as Batman in TDKR</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2917,7 +2906,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Timothée_Chalamet"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_PaulAtreides"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
-        <roleName>Paul Atreides</roleName>
         <rdfs:label xml:lang="en">Chalamet as Paul Atreides in Dune</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2930,7 +2918,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Bryan_Cranston"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_WalterWhite"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
-        <roleName>Walter White</roleName>
         <rdfs:label xml:lang="en">Cranston as Walter White</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2943,7 +2930,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_BillyDeparted"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
-        <roleName>Billy Costigan</roleName>
         <rdfs:label xml:lang="en">DiCaprio as Costigan in The Departed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2956,7 +2942,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_DomCobb"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Inception"/>
-        <roleName>Dom Cobb</roleName>
         <rdfs:label xml:lang="en">DiCaprio as Cobb in Inception</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2967,9 +2952,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#Role_Ferguson_BR2049">
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ActingRole"/>
         <performedBy rdf:resource="http://dbpedia.org/resource/Rebecca_Ferguson"/>
-        <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_LadyJessica"/>
+        <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_AnaStelline"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
-        <roleName>Dr. Ana Stelline</roleName>
         <rdfs:label xml:lang="en">Ferguson as Ana Stelline in Blade Runner 2049</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2982,7 +2966,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Rebecca_Ferguson"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_LadyJessica"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Dune_(2021_film)"/>
-        <roleName>Lady Jessica</roleName>
         <rdfs:label xml:lang="en">Ferguson as Lady Jessica in Dune</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2995,7 +2978,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_FarrierDunkirk"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
-        <roleName>Farrier</roleName>
         <rdfs:label xml:lang="en">Hardy as Farrier in Dunkirk</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3008,7 +2990,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Eames"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Inception"/>
-        <roleName>Eames</roleName>
         <rdfs:label xml:lang="en">Hardy as Eames in Inception</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3021,7 +3002,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Bane"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
-        <roleName>Bane</roleName>
         <rdfs:label xml:lang="en">Hardy as Bane in TDKR</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3034,7 +3014,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_AndreiBator"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Tenet_(film)"/>
-        <roleName>Andrei Sator</roleName>
         <rdfs:label xml:lang="en">Hardy as Sator in Tenet</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3047,7 +3026,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_BrandInterstellar"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
-        <roleName>Dr. Amelia Brand</roleName>
         <rdfs:label xml:lang="en">Hathaway as Brand in Interstellar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3060,7 +3038,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_SelenaKyle"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight_Rises"/>
-        <roleName>Selina Kyle</roleName>
         <rdfs:label xml:lang="en">Hathaway as Selina Kyle in TDKR</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3073,7 +3050,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_CooperInterstellar"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
-        <roleName>Cooper</roleName>
         <rdfs:label xml:lang="en">McConaughey as Cooper in Interstellar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3086,7 +3062,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Helen_McCrory"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_PollyGray"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
-        <roleName>Polly Gray</roleName>
         <rdfs:label xml:lang="en">McCrory as Polly Gray</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3099,7 +3074,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_TommyDunkirk"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Dunkirk_(film)"/>
-        <roleName>Tommy</roleName>
         <rdfs:label xml:lang="en">Murphy as Tommy in Dunkirk</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3112,7 +3086,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_MurphInterstellar"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Interstellar_(film)"/>
-        <roleName>Murph Cooper</roleName>
         <rdfs:label xml:lang="en">Murphy as Murph in Interstellar</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3125,7 +3098,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_Oppenheimer"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Oppenheimer_(film)"/>
-        <roleName>J. Robert Oppenheimer</roleName>
         <rdfs:label xml:lang="en">Murphy as Oppenheimer</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3138,7 +3110,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_TommyShelby"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
-        <roleName>Thomas Shelby</roleName>
         <rdfs:label xml:lang="en">Murphy as Thomas Shelby</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3151,7 +3122,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Cillian_Murphy"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_ScarecrrowTDK"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
-        <roleName>Scarecrow</roleName>
         <rdfs:label xml:lang="en">Murphy as Scarecrow in The Dark Knight</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3164,7 +3134,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Jack_Nicholson"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_CostelloDeparted"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/The_Departed"/>
-        <roleName>Frank Costello</roleName>
         <rdfs:label xml:lang="en">Nicholson as Costello in The Departed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3177,7 +3146,6 @@
         <performedBy rdf:resource="http://dbpedia.org/resource/Aaron_Paul"/>
         <portraysCharacter rdf:resource="http://www.semanticweb.org/streaming-ontology#Char_JessePinkman"/>
         <roleInContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
-        <roleName>Jesse Pinkman</roleName>
         <rdfs:label xml:lang="en">Paul as Jesse Pinkman</rdfs:label>
     </owl:NamedIndividual>
     
