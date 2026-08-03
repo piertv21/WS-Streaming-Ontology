@@ -3,7 +3,6 @@
      xml:base="http://www.semanticweb.org/streaming-ontology"
      xmlns:so="http://www.semanticweb.org/streaming-ontology#"
      xmlns:dbo="http://dbpedia.org/ontology/"
-     xmlns:dbp="http://dbpedia.org/property/"
      xmlns:dbr="http://dbpedia.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -1069,10 +1068,71 @@
     <!-- http://dbpedia.org/ontology/Film -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Film">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:subClassOf rdf:resource="https://schema.org/Movie"/>
-        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to type Movie individuals reused from DBpedia. Declared as a subclass of schema:Movie rather than equivalent to it, since dbo:Film denotes theatrically released feature films specifically, while schema:Movie is the broader vocabulary term that also covers TV movies and other made-for-video releases.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to type Movie individuals reused from DBpedia, alongside so:Movie, without asserting a subsumption relation to schema:Movie.</rdfs:comment>
         <rdfs:label xml:lang="en">Film</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Actor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Actor">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type Actor individuals reused from DBpedia.</rdfs:comment>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Company -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Company">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type ProductionCompany individuals reused from DBpedia.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type Country individuals reused from DBpedia, alongside schema:Country.</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Language -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Language">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type Language individuals reused from DBpedia, alongside schema:Language.</rdfs:comment>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type Director, Producer and Screenwriter individuals reused from DBpedia, which DBpedia does not model with more specific role classes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionShow -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionShow">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type TVSeries individuals reused from DBpedia.</rdfs:comment>
+        <rdfs:label xml:lang="en">Television Show</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Website -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Website">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type StreamingPlatform individuals reused from DBpedia, reflecting how DBpedia itself models these services.</rdfs:comment>
+        <rdfs:label xml:lang="en">Website</rdfs:label>
     </owl:Class>
     
 
@@ -1576,7 +1636,6 @@
     <!-- https://schema.org/Country -->
 
     <owl:Class rdf:about="https://schema.org/Country">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Used for production countries.</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
     </owl:Class>
@@ -1586,7 +1645,6 @@
     <!-- https://schema.org/CreativeWork -->
 
     <owl:Class rdf:about="https://schema.org/CreativeWork">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Root type for creative works. Parent of AudiovisualContent.</rdfs:comment>
         <rdfs:label xml:lang="en">Creative Work</rdfs:label>
     </owl:Class>
@@ -1596,7 +1654,6 @@
     <!-- https://schema.org/Language -->
 
     <owl:Class rdf:about="https://schema.org/Language">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Used for content languages.</rdfs:comment>
         <rdfs:label xml:lang="en">Language</rdfs:label>
     </owl:Class>
@@ -1606,8 +1663,7 @@
     <!-- https://schema.org/Movie -->
 
     <owl:Class rdf:about="https://schema.org/Movie">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
-        <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:Movie. dbo:Film is declared as a subclass of this class.</rdfs:comment>
+        <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:Movie.</rdfs:comment>
         <rdfs:label xml:lang="en">Movie</rdfs:label>
     </owl:Class>
     
@@ -1616,7 +1672,6 @@
     <!-- https://schema.org/Organization -->
 
     <owl:Class rdf:about="https://schema.org/Organization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Parent of StreamingPlatform and ProductionCompany.</rdfs:comment>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
     </owl:Class>
@@ -1626,7 +1681,6 @@
     <!-- https://schema.org/Person -->
 
     <owl:Class rdf:about="https://schema.org/Person">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Reused as the parent of all person-role classes in this ontology.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
@@ -1636,7 +1690,6 @@
     <!-- https://schema.org/Rating -->
 
     <owl:Class rdf:about="https://schema.org/Rating">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Parent of UserRating for numeric rating alignment.</rdfs:comment>
         <rdfs:label xml:lang="en">Rating</rdfs:label>
     </owl:Class>
@@ -1646,7 +1699,6 @@
     <!-- https://schema.org/TVEpisode -->
 
     <owl:Class rdf:about="https://schema.org/TVEpisode">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:TVEpisode.</rdfs:comment>
         <rdfs:label xml:lang="en">TVEpisode</rdfs:label>
     </owl:Class>
@@ -1656,7 +1708,6 @@
     <!-- https://schema.org/TVSeason -->
 
     <owl:Class rdf:about="https://schema.org/TVSeason">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:TVSeason.</rdfs:comment>
         <rdfs:label xml:lang="en">TVSeason</rdfs:label>
     </owl:Class>
@@ -1666,7 +1717,6 @@
     <!-- https://schema.org/TVSeries -->
 
     <owl:Class rdf:about="https://schema.org/TVSeries">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#DomainEntity"/>
         <rdfs:comment xml:lang="en">External Schema.org class. Parent for so:TVSeries.</rdfs:comment>
         <rdfs:label xml:lang="en">TVSeries</rdfs:label>
     </owl:Class>
@@ -1687,6 +1737,7 @@
     <!-- http://dbpedia.org/resource/Aaron_Paul -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Aaron_Paul">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-08-27</birthDate>
         <rdfs:label xml:lang="en">Aaron Paul</rdfs:label>
@@ -1706,6 +1757,7 @@
     <!-- http://dbpedia.org/resource/Amazon_Prime_Video -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Amazon_Prime_Video">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Website"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
         <rdfs:label xml:lang="en">Amazon Prime Video</rdfs:label>
     </owl:NamedIndividual>
@@ -1715,6 +1767,7 @@
     <!-- http://dbpedia.org/resource/Anne_Hathaway -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Anne_Hathaway">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-11-12</birthDate>
         <rdfs:label xml:lang="en">Anne Hathaway</rdfs:label>
@@ -1747,6 +1800,7 @@
     <!-- http://dbpedia.org/resource/Breaking_Bad -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Breaking_Bad">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionShow"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Cranston_BB"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Paul_BB"/>
@@ -1768,6 +1822,7 @@
     <!-- http://dbpedia.org/resource/Bryan_Cranston -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bryan_Cranston">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-03-07</birthDate>
         <rdfs:label xml:lang="en">Bryan Cranston</rdfs:label>
@@ -1778,6 +1833,7 @@
     <!-- http://dbpedia.org/resource/Christian_Bale -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christian_Bale">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-01-30</birthDate>
         <rdfs:label xml:lang="en">Christian Bale</rdfs:label>
@@ -1788,6 +1844,7 @@
     <!-- http://dbpedia.org/resource/Christopher_Nolan -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christopher_Nolan">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
@@ -1800,6 +1857,7 @@
     <!-- http://dbpedia.org/resource/Cillian_Murphy -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cillian_Murphy">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-05-25</birthDate>
         <rdfs:label xml:lang="en">Cillian Murphy</rdfs:label>
@@ -1819,6 +1877,7 @@
     <!-- http://dbpedia.org/resource/Denis_Villeneuve -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Denis_Villeneuve">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-10-03</birthDate>
@@ -1830,6 +1889,7 @@
     <!-- http://dbpedia.org/resource/Emma_Thomas -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Emma_Thomas">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-11-13</birthDate>
         <rdfs:label xml:lang="en">Emma Thomas</rdfs:label>
@@ -1840,6 +1900,7 @@
     <!-- http://dbpedia.org/resource/English_language -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/English_language">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Language"/>
         <rdf:type rdf:resource="https://schema.org/Language"/>
         <rdfs:label xml:lang="en">English</rdfs:label>
     </owl:NamedIndividual>
@@ -1849,6 +1910,7 @@
     <!-- http://dbpedia.org/resource/Helen_McCrory -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Helen_McCrory">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-08-17</birthDate>
         <rdfs:label xml:lang="en">Helen McCrory</rdfs:label>
@@ -1890,6 +1952,7 @@
     <!-- http://dbpedia.org/resource/Jack_Nicholson -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jack_Nicholson">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-04-22</birthDate>
         <rdfs:label xml:lang="en">Jack Nicholson</rdfs:label>
@@ -1900,6 +1963,7 @@
     <!-- http://dbpedia.org/resource/Legendary_Entertainment -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Legendary_Entertainment">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
         <rdfs:label xml:lang="en">Legendary Pictures</rdfs:label>
     </owl:NamedIndividual>
@@ -1909,6 +1973,7 @@
     <!-- http://dbpedia.org/resource/Leonardo_DiCaprio -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Leonardo_DiCaprio">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-11-11</birthDate>
         <rdfs:label xml:lang="en">Leonardo DiCaprio</rdfs:label>
@@ -1919,6 +1984,7 @@
     <!-- http://dbpedia.org/resource/Martin_Scorsese -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Martin_Scorsese">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-11-17</birthDate>
         <rdfs:label xml:lang="en">Martin Scorsese</rdfs:label>
@@ -1929,6 +1995,7 @@
     <!-- http://dbpedia.org/resource/Mary_Parent -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mary_Parent">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Producer"/>
         <rdfs:label xml:lang="en">Mary Parent</rdfs:label>
     </owl:NamedIndividual>
@@ -1938,6 +2005,7 @@
     <!-- http://dbpedia.org/resource/Matthew_McConaughey -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Matthew_McConaughey">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-11-04</birthDate>
         <rdfs:label xml:lang="en">Matthew McConaughey</rdfs:label>
@@ -1948,6 +2016,7 @@
     <!-- http://dbpedia.org/resource/Netflix -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Netflix">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Website"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
         <rdfs:label xml:lang="en">Netflix</rdfs:label>
     </owl:NamedIndividual>
@@ -1957,6 +2026,7 @@
     <!-- http://dbpedia.org/resource/Paramount_Pictures -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Paramount_Pictures">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
         <rdfs:label xml:lang="en">Paramount Pictures</rdfs:label>
     </owl:NamedIndividual>
@@ -1966,6 +2036,7 @@
     <!-- http://dbpedia.org/resource/Rebecca_Ferguson -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rebecca_Ferguson">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-10-19</birthDate>
         <rdfs:label xml:lang="en">Rebecca Ferguson</rdfs:label>
@@ -1985,6 +2056,7 @@
     <!-- http://dbpedia.org/resource/Steven_Knight -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Steven_Knight">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-08-05</birthDate>
@@ -1996,6 +2068,7 @@
     <!-- http://dbpedia.org/resource/Syncopy_Inc. -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Syncopy_Inc.">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
         <rdfs:label xml:lang="en">Syncopy Films</rdfs:label>
     </owl:NamedIndividual>
@@ -2094,6 +2167,7 @@
     <!-- http://dbpedia.org/resource/Timothée_Chalamet -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Timothée_Chalamet">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-12-27</birthDate>
         <rdfs:label xml:lang="en">Timothée Chalamet</rdfs:label>
@@ -2104,6 +2178,7 @@
     <!-- http://dbpedia.org/resource/Tom_Hardy -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tom_Hardy">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Actor"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-09-15</birthDate>
         <rdfs:label xml:lang="en">Tom Hardy</rdfs:label>
@@ -2114,6 +2189,7 @@
     <!-- http://dbpedia.org/resource/United_Kingdom -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/United_Kingdom">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
         <rdf:type rdf:resource="https://schema.org/Country"/>
         <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
     </owl:NamedIndividual>
@@ -2123,6 +2199,7 @@
     <!-- http://dbpedia.org/resource/United_States -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/United_States">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
         <rdf:type rdf:resource="https://schema.org/Country"/>
         <rdfs:label xml:lang="en">United States</rdfs:label>
     </owl:NamedIndividual>
@@ -2132,6 +2209,7 @@
     <!-- http://dbpedia.org/resource/Vince_Gilligan -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Vince_Gilligan">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Director"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#Screenwriter"/>
         <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-02-10</birthDate>
@@ -2152,6 +2230,7 @@
     <!-- http://dbpedia.org/resource/Warner_Bros._Pictures -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Warner_Bros._Pictures">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Company"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#ProductionCompany"/>
         <rdfs:label xml:lang="en">Warner Bros. Pictures</rdfs:label>
     </owl:NamedIndividual>
@@ -2161,6 +2240,7 @@
     <!-- http://dbpedia.org/resource/Apple_TV%2B -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Apple_TV%2B">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Website"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#StreamingPlatform"/>
         <rdfs:label xml:lang="en">Apple TV+</rdfs:label>
     </owl:NamedIndividual>
@@ -2285,6 +2365,7 @@
     <!-- http://dbpedia.org/resource/Peaky_Blinders_(TV_series) -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionShow"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeries"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_McCrory_PB"/>
         <hasActingRole rdf:resource="http://www.semanticweb.org/streaming-ontology#Role_Murphy_PB"/>
