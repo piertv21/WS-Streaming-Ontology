@@ -1065,15 +1065,6 @@
     
 
 
-    <!-- http://dbpedia.org/ontology/Film -->
-
-    <owl:Class rdf:about="http://dbpedia.org/ontology/Film">
-        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to type Movie individuals reused from DBpedia, alongside so:Movie, without asserting a subsumption relation to schema:Movie.</rdfs:comment>
-        <rdfs:label xml:lang="en">Film</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://dbpedia.org/ontology/Actor -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Actor">
@@ -1101,6 +1092,15 @@
     
 
 
+    <!-- http://dbpedia.org/ontology/Film -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Film">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to type Movie individuals reused from DBpedia, alongside so:Movie, without asserting a subsumption relation to schema:Movie.</rdfs:comment>
+        <rdfs:label xml:lang="en">Film</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://dbpedia.org/ontology/Language -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Language">
@@ -1115,6 +1115,24 @@
     <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
         <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type Director, Producer and Screenwriter individuals reused from DBpedia, which DBpedia does not model with more specific role classes.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionEpisode -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionEpisode">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type TVEpisode individuals, alongside so:TVEpisode.</rdfs:comment>
+        <rdfs:label xml:lang="en">Television Episode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionSeason -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionSeason">
+        <rdfs:comment xml:lang="en">External DBpedia-ontology class. Used to additionally type TVSeason individuals, alongside so:TVSeason.</rdfs:comment>
+        <rdfs:label xml:lang="en">Television Season</rdfs:label>
     </owl:Class>
     
 
@@ -1271,7 +1289,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/streaming-ontology#ContentCompleter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/streaming-ontology#User"/>
-        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A user who has completed at least one content item fully.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inferred class — populated exclusively by SWRL rules. A user with two viewing events considered as completed.</rdfs:comment>
         <rdfs:label xml:lang="en">Content Completer</rdfs:label>
     </owl:Class>
     
@@ -3263,6 +3281,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
@@ -3278,6 +3297,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E2">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
@@ -3292,6 +3312,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E3">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Breaking_Bad"/>
@@ -3306,6 +3327,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
@@ -3321,6 +3343,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E2">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
@@ -3335,6 +3358,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E3">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionEpisode"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode"/>
         <episodeOfSeason rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1"/>
         <hasMetadataContent rdf:resource="http://dbpedia.org/resource/Peaky_Blinders_(TV_series)"/>
@@ -3349,6 +3373,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeason_BB_S1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionSeason"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E1"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_BB_S1E2"/>
@@ -3363,6 +3388,7 @@
     <!-- http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/streaming-ontology#TVSeason_PB_S1">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TelevisionSeason"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/streaming-ontology#TVSeason"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E1"/>
         <hasSeasonEpisode rdf:resource="http://www.semanticweb.org/streaming-ontology#TVEpisode_PB_S1E2"/>
